@@ -15,6 +15,8 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.736')
+    implementation 'com.amazonaws:aws-java-sdk-kms:1.11.736'
 }
 
 tasks.named('test') {
